@@ -141,3 +141,41 @@ $ git checkout 48a7a -- style.css
 
 AKBAR@DESKTOP-A3D4IFR MINGW64 ~/Documents/Project-Rbkcozzy (master)
 $
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+AKBAR@DESKTOP-A3D4IFR MINGW64 /d/WebProgramming/Project-RBKcozzy (master)
+$ git branch
+  dua
+* master
+  satu
+
+AKBAR@DESKTOP-A3D4IFR MINGW64 /d/WebProgramming/Project-RBKcozzy (master)
+$ alias graph="git log --all --decorate --oneline --graph"
+
+AKBAR@DESKTOP-A3D4IFR MINGW64 /d/WebProgramming/Project-RBKcozzy (master)
+$ graph
+*   53d9f33 (HEAD -> master, origin/master, satu, dua) Merge branch 'master' of https://github.com/Rbkcozzy/Project-RBKcozzy
+|\
+| * 7ef6ccc Create README.md
+* | cfa560b dokumen petunjuk command prompt git hash
+|/
+* f9f802c Menambahkan file style yaitu CSS dan file script yaitu JavaScript serta mengaitkan file CSS di dalam HTML
+* bef0913 Menambahkan file html ke repository
+
+AKBAR@DESKTOP-A3D4IFR MINGW64 /d/WebProgramming/Project-RBKcozzy (master)
+$ git branch
+  dua
+* master
+  satu
+
+AKBAR@DESKTOP-A3D4IFR MINGW64 /d/WebProgramming/Project-RBKcozzy (master)
+$ git checkout satu
+Switched to branch 'satu'
+
+AKBAR@DESKTOP-A3D4IFR MINGW64 /d/WebProgramming/Project-RBKcozzy (satu)
+$
+
