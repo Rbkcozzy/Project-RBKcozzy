@@ -1,0 +1,143 @@
+
+AKBAR@DESKTOP-A3D4IFR MINGW64 ~/Documents/Project-Rbkcozzy (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+AKBAR@DESKTOP-A3D4IFR MINGW64 ~/Documents/Project-Rbkcozzy (master)
+$ git add index.html
+
+AKBAR@DESKTOP-A3D4IFR MINGW64 ~/Documents/Project-Rbkcozzy (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+AKBAR@DESKTOP-A3D4IFR MINGW64 ~/Documents/Project-Rbkcozzy (master)
+$ git commit
+Aborting commit due to empty commit message.
+
+AKBAR@DESKTOP-A3D4IFR MINGW64 ~/Documents/Project-Rbkcozzy (master)
+$ git commit -m "nambahin file html"
+[master (root-commit) e7eeb59] nambahin file html
+ 1 file changed, 11 insertions(+)
+ create mode 100644 index.html
+
+AKBAR@DESKTOP-A3D4IFR MINGW64 ~/Documents/Project-Rbkcozzy (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+AKBAR@DESKTOP-A3D4IFR MINGW64 ~/Documents/Project-Rbkcozzy (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+AKBAR@DESKTOP-A3D4IFR MINGW64 ~/Documents/Project-Rbkcozzy (master)
+$ git add .
+
+AKBAR@DESKTOP-A3D4IFR MINGW64 ~/Documents/Project-Rbkcozzy (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+        new file:   style.css
+
+
+AKBAR@DESKTOP-A3D4IFR MINGW64 ~/Documents/Project-Rbkcozzy (master)
+$ git commit -m "Telah menambahkan paragraf dan menambahkan style css"
+[master 48a7a41] Telah menambahkan paragraf dan menambahkan style css
+ 2 files changed, 5 insertions(+)
+ create mode 100644 style.css
+
+AKBAR@DESKTOP-A3D4IFR MINGW64 ~/Documents/Project-Rbkcozzy (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+        deleted:    style.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+AKBAR@DESKTOP-A3D4IFR MINGW64 ~/Documents/Project-Rbkcozzy (master)
+$ git add .
+
+AKBAR@DESKTOP-A3D4IFR MINGW64 ~/Documents/Project-Rbkcozzy (master)
+$ git commit -m "Menghapus CSS diganti dengan internal CSS dan menambahkan scrip
+[master cfb81f5] Menghapus CSS diganti dengan internal CSS dan menambahkan scrip
+ 3 files changed, 4 insertions(+), 4 deletions(-)
+ create mode 100644 index.js
+ delete mode 100644 style.css
+
+AKBAR@DESKTOP-A3D4IFR MINGW64 ~/Documents/Project-Rbkcozzy (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+AKBAR@DESKTOP-A3D4IFR MINGW64 ~/Documents/Project-Rbkcozzy (master)
+$ git log
+commit cfb81f5885f6209fee98f0d655c79ba7bca59892 (HEAD -> master)
+Author: Rbkcozzy <Muhammadakbarmaulana798@gmail.com>
+Date:   Tue Jun 17 21:44:13 2025 +0800
+
+    Menghapus CSS diganti dengan internal CSS dan menambahkan script javascript
+
+commit 48a7a416ab34f061c8ca7f383f75a23f47ef4620
+Author: Rbkcozzy <Muhammadakbarmaulana798@gmail.com>
+Date:   Tue Jun 17 21:38:13 2025 +0800
+
+    Telah menambahkan paragraf dan menambahkan style css
+
+commit e7eeb596c659493a5f7fe3f5612f2d7f5dd88111
+Author: Rbkcozzy <Muhammadakbarmaulana798@gmail.com>
+Date:   Tue Jun 17 21:32:18 2025 +0800
+
+    nambahin file html
+
+AKBAR@DESKTOP-A3D4IFR MINGW64 ~/Documents/Project-Rbkcozzy (master)
+$ git log -- style.css
+commit cfb81f5885f6209fee98f0d655c79ba7bca59892 (HEAD -> master)
+Author: Rbkcozzy <Muhammadakbarmaulana798@gmail.com>
+Date:   Tue Jun 17 21:44:13 2025 +0800
+
+    Menghapus CSS diganti dengan internal CSS dan menambahkan script javascript
+
+commit 48a7a416ab34f061c8ca7f383f75a23f47ef4620
+Author: Rbkcozzy <Muhammadakbarmaulana798@gmail.com>
+Date:   Tue Jun 17 21:38:13 2025 +0800
+
+    Telah menambahkan paragraf dan menambahkan style css
+
+AKBAR@DESKTOP-A3D4IFR MINGW64 ~/Documents/Project-Rbkcozzy (master)
+$ git checkout 48a7a -- style.css
+
+AKBAR@DESKTOP-A3D4IFR MINGW64 ~/Documents/Project-Rbkcozzy (master)
+$
