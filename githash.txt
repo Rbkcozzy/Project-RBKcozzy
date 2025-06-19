@@ -1,4 +1,4 @@
-
+B
 istilah yang ada di video ini:
 ○git branch
 ↪memberi tahu semua branch yang ada
